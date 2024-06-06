@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center> <h2>TOUCH HERE</h2>
+    <span>welcome to my page</span></center>
+    <script>
+        var h2 = document.getElementsByTagName("h2")[0];
+        var span = document.getElementsByTagName("span")[0];
+       
+        h2.addEventListener("click", hello)
+        span.style.color="white" 
+        span.style.backgroundColor="black"
+        span.style.padding="6px"
+        span.style.fontSize="25px"
+        function hello() {
+            
+            if (span.style.color === "white") {
+                span.style.color = "red";
+            } else {
+                span.style.color = "white";
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h2>SELECT THE OPTION TO GET AN IMAGE</h2>
+    
+    
+     <input type="radio" name="Laptop" onclick="hello()">
+     <label for="" style="font-size: 20px;">Laptop</label><br><br>
+     <input type="radio" name="Laptop" onclick="hii()">
+    <label for="" style="font-size: 20px;">Phone</label>
+    <img id="img1" src="https://tse1.mm.bing.net/th?id=OIP.Mv51zSg-zzJq2yRi83LzZAHaGS&pid=Api&P=0&h=180" alt="" width="200px" height="200px">
+    <img id="img2" src="https://tse4.mm.bing.net/th?id=OIP.KwavIwuhhIw20dSqHQA4pAHaHa&pid=Api&P=0&h=180" alt="" width="200px" height="200px"> 
+
+
+
+<script>     
+ function hello(){
+    var image1=document.getElementById("img1");
+    image1.src="https://tse1.mm.bing.net/th?id=OIP.Mv51zSg-zzJq2yRi83LzZAHaGS&pid=Api&P=0&h=180"
+    image1.style.visibility="visible";
+    var image2=document.getElementById("img2");
+    image2.style.visibility="hidden";
+
+
+}
+           
+function hii(){
+    var image2=document.getElementById("img2");
+    image2.src="https://tse4.mm.bing.net/th?id=OIP.KwavIwuhhIw20dSqHQA4pAHaHa&pid=Api&P=0&h=180"
+    image2.style.visibility="visible";
+    var image1=document.getElementById("img1");
+    image1.style.visibility="hidden";
+
+}
+</script>
+    
+     
+</body>
+</html>
